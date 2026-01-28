@@ -1,0 +1,8 @@
+title: Project 1
+description: Your first project content
+
+url: "https://username.github.io"
+baseurl: "/project-1"
+
+markdown: kramdown
+theme: minima
