@@ -9,7 +9,7 @@ permalink: /
 	<div class="col-10 col-sm-8 col-lg-6">
 		<figure class="hero-figure">
 			<img
-				src="{{ site.baseurl }}assets/img/cracker-jack-1024x768.jpg"
+				src="{{ '/assets/img/cracker-jack-1024x768.jpg' | relative_url }}"
 				class="d-block mx-lg-auto img-fluid hero-image img-thumbnail"
 				alt=""
 				width="700"
