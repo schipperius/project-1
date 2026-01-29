@@ -35,9 +35,11 @@ gem "http_parser.rb", "~> 0.6.0", :platforms => [:jruby]
 gem "jekyll-sitemap", "~> 1.4", group: :jekyll
 # Use `jekyll-seo-tag` to improve SEO
 gem "jekyll-seo-tag", "~> 2.8", group: :jekyll
-# Webrick is no longer included by default with Ruby >= 3.0
-gem "webrick", "~> 1.7"
+# Use `faraday` for making HTTP requests
 # The "retry" functionality automatically tries a failed web request again
 gem 'faraday-retry'
 
-
+# Optional: for local development convenience
+group :jekyll_plugins do
+  gem "webrick", "~> 1.8" # required for some Ruby versions with Jekyll serve
+end
