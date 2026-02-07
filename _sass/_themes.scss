@@ -64,3 +64,15 @@
 [data-bs-theme="dark"] .hero-caption {
   opacity: 0.85;
 }
+
+/* =========================
+   Drop cap for the opening paragraph
+   ========================= */
+.drop-cap:first-of-type::first-letter {
+  float: left;
+  font-size: 5em;
+  line-height: 0.85;
+  font-weight: bold;
+  margin: 0.05em 0.1em 0 0;
+  color: #333; /* Optional: color the letter */
+}

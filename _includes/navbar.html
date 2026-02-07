@@ -6,8 +6,24 @@
        class="d-flex align-items-center link-body-emphasis text-decoration-none me-auto">
       <span class="fs-4">the Book of Jack</span>
     </a>
+    <!-- Right of Left Branding -->
+    <div class="d-flex align-items-center gap-3">
+    <div class="d-flex align-items-center gap-3">
+      <a href="{{ '/jump-in/' | relative_url }}"
+         class="nav-link {% if page.url contains '/jump-in' %}active{% endif %} px-2">
+        Jump In
+      </a>
+      <a href="{{ '/start-here/' | relative_url }}"
+         class="nav-link {% if page.url contains '/start-here' %}active{% endif %} px-2">
+        Start Here
+      </a>
 
     <!-- Right: Nav links + theme -->
+    <div class="d-flex align-items-center gap-3">
+      <a href="{{ '/jack-origins/' | relative_url }}"
+         class="nav-link {% if page.url contains '/jack-origins' %}active{% endif %} px-2">
+        Origins
+      </a>
     <div class="d-flex align-items-center gap-3">
       <a href="{{ '/about/' | relative_url }}"
          class="nav-link {% if page.url contains '/about' %}active{% endif %} px-2">
