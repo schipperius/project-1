@@ -1,5 +1,6 @@
 
 <!-- Navbar -->
+<header class="sticky-top"> 
 <nav class="border-bottom">
   <div class="container py-3 d-flex align-items-center">
 
@@ -9,6 +10,7 @@
         class="nav d-flex align-items-center link-body-emphasis text-decoration-none me-auto">
         <span class="fs-4">the Book of Jack</span>
       </a>
+      
       <!-- Start Here (opens TOC offcanvas) -->
       <button
         class="btn"
@@ -29,7 +31,7 @@
 
     <!-- CENTER REGION Search -->
     <div class="mx-auto">
-      <form class="d-flex align-items-center" role="search">
+      <form class="d-flex align-items-between" role="search">
         <input
           class="form-control form-control-md me-2"
           type="search"
@@ -41,6 +43,7 @@
       </form>
     </div>
 
+    
     <!-- RIGHT REGION Theme dropdown.-->
     <div class="dropdown">
       <button class="btn btn-outline-secondary dropdown-toggle"
@@ -58,6 +61,8 @@
 
   </div>
 </nav>
+</header>
 
 <!--Table of Contents-->
  {% include toc.html %}
+

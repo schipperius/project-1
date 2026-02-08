@@ -47,6 +47,17 @@ tags:
   </div>
 </section>
 
+<nav aria-label="Page navigation example">
+  <ul class="pagination justify-content-between">
+    <li class="page-item">
+      <a class="page-link" href="#">Previous</a>
+    </li>
+    <li class="page-item">
+      <a class="page-link" href="#">Next</a>
+    </li>
+  </ul>
+</nav>
+
 <!-- OVERVIEW -->
 <section class="py-5" id="overview">
   <div class="container col-xxl-8 px-4">
