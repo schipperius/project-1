@@ -1,35 +1,36 @@
 
-<!-- Navbar -->
-<header class="sticky-top"> 
-<nav class="border-bottom">
-  <div class="container py-3 d-flex align-items-center">
 
-    <!-- LEFT REGION Branding and two entry points. -->
-    <div class="d-flex align-items-center gap-3 me-auto">
-      <a href="{{ '/' | relative_url }}"
-        class="nav d-flex align-items-center link-body-emphasis text-decoration-none me-auto">
-        <span class="fs-4">the Book of Jack</span>
-      </a>
-      
-      <!-- Start Here (opens TOC offcanvas) -->
-      <button
-        class="btn"
-        type="button"
-        data-bs-toggle="offcanvas"
-        data-bs-target="#offcanvasDarkNavbar"
-        aria-controls="offcanvasDarkNavbar"
-      >
-        Start Here
-      </button>
-      
-      <!-- Jump In -->
-      <a href="{{ '/jump-in/' | relative_url }}"
-         class="nav-link px-2 {% if page.url contains '/jump-in' %}active{% endif %}">
-        Jump In
-      </a>
+<div class="container sticky-top"> 
+  <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom"> 
+    <!-- Title and Home link with space on the left for an SVG logo -->
+    <a href="{{ '/' | relative_url }}" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none"> 
+      <svg class="me-2" width="40" height="32" aria-hidden="true"><use xlink:href="#"></use></svg> 
+      <span class="fs-4">the Book of Jack</span> 
+    </a> 
+<!-- Add 'Start Here' button to activate a side bar showing table of contents. -->
+    <button
+      class="btn btn-outline-secondary"
+      type="button"
+      data-bs-toggle="offcanvas"
+      data-bs-target="#offcanvasNavbarDark"
+      aria-controls="offcanvasNavbarDark"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <!-- Offcampus sidebar for Table of Contents-->
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbarDark" aria-labelledby="offcanvasNavbarDarkLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasNavbarDarkLabel">Table of Contents</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <div>
+          {% include toc.html %}
+        </div>
+      </div>
     </div>
-
-    <!-- CENTER REGION Search -->
+    <!-- Search... need to implement a real search function. -->  
     <div class="mx-auto">
       <form class="d-flex align-items-between" role="search">
         <input
@@ -42,9 +43,7 @@
         </button>
       </form>
     </div>
-
-    
-    <!-- RIGHT REGION Theme dropdown.-->
+    <!-- Theme dropdown -->
     <div class="dropdown">
       <button class="btn btn-outline-secondary dropdown-toggle"
               type="button"
@@ -59,10 +58,6 @@
       </ul>
     </div>
 
-  </div>
-</nav>
-</header>
-
-<!--Table of Contents-->
- {% include toc.html %}
-
+  </header> 
+</div>
+<!-- End new navbar -->
