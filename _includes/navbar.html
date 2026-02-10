@@ -1,24 +1,26 @@
 
-
-<div class="container sticky-top"> 
+<div class="container sticky-top bg-body z-3">
   <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom"> 
+    
     <!-- Title and Home link with space on the left for an SVG logo -->
-    <a href="{{ '/' | relative_url }}" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none"> 
-      <svg class="me-2" width="40" height="32" aria-hidden="true"><use xlink:href="#"></use></svg> 
-      <span class="fs-4">the Book of Jack</span> 
-    </a> 
-<!-- Add 'Start Here' button to activate side bar showing table of contents. -->
-    <button
-      class="btn btn-outline-secondary"
-      type="button"
-      data-bs-toggle="offcanvas"
-      data-bs-target="#offcanvasNavbarDark"
-      aria-controls="offcanvasNavbarDark"
-      aria-label="Toggle navigation"
-    >
-      <span class="navbar-toggler-icon"></span>
-      Start Here
-    </button>
+    <div class="d-flex align-items-center me-md-auto gap-3">
+    <a href="{{ '/' | relative_url }}" class="d-flex align-items-center link-body-emphasis text-decoration-none"> 
+        <img src="{{ '/assets/images/letter-j.png' | relative_url }}" style="position: relative; z-index: 9999;" class="me-2" width="40" height="32" aria-hidden="true" alt="Letter J logo">
+        <span class="fs-4">the Book of Jack</span> 
+      </a> 
+  <!-- Add 'Start Here' button to activate side bar showing table of contents. -->
+      <button
+        class="btn btn-outline-secondary"
+        type="button"
+        data-bs-toggle="offcanvas"
+        data-bs-target="#offcanvasNavbarDark"
+        aria-controls="offcanvasNavbarDark"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+        Start Here
+      </button>
+    </div>
     <!-- Offcampus sidebar for Table of Contents-->
     <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbarDark" aria-labelledby="offcanvasNavbarDarkLabel">
       <div class="offcanvas-header">
@@ -32,7 +34,7 @@
       </div>
     </div>
     <!-- Search... need to implement a real search function. -->  
-    <div class="mx-auto">
+    <div class="d-flex align-items-center gap-3">
       <form class="d-flex align-items-between" role="search">
         <input
           class="form-control form-control-md me-2"
@@ -43,22 +45,24 @@
           Search
         </button>
       </form>
-    </div>
+    
     <!-- Theme dropdown -->
-    <div class="dropdown">
-      <button class="btn btn-outline-secondary dropdown-toggle"
-              type="button"
-              data-bs-toggle="dropdown"
-              aria-expanded="false">
-        Theme
-      </button>
-      <ul class="dropdown-menu dropdown-menu-end">
-        <li><button class="dropdown-item" data-bs-theme-value="light">☀ Light</button></li>
-        <li><button class="dropdown-item" data-bs-theme-value="dark">🌙 Dark</button></li>
-        <li><button class="dropdown-item" data-bs-theme-value="auto">⚙ Auto</button></li>
-      </ul>
+      <div class="dropdown">
+        <button class="btn btn-outline-secondary dropdown-toggle"
+                type="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false">
+          Theme
+        </button>
+        <ul class="dropdown-menu dropdown-menu-end">
+          <li><button class="dropdown-item" data-bs-theme-value="light">☀ Light</button></li>
+          <li><button class="dropdown-item" data-bs-theme-value="dark">🌙 Dark</button></li>
+          <li><button class="dropdown-item" data-bs-theme-value="auto">⚙ Auto</button></li>
+        </ul>
+      </div>
     </div>
 
   </header> 
 </div>
 <!-- End new navbar -->
+
