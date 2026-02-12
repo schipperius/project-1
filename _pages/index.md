@@ -2,14 +2,6 @@
 layout: default
 title: Home
 permalink: /
-
-categories: [Food and Drink, Anthologies]
-tags:
-  - etymology 
-  - origin
-  - location
-  - time
-  - narrative
 ---
 
 <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
@@ -24,7 +16,7 @@ tags:
         loading="lazy"
       />
       <figcaption class="figure-caption hero-caption">
-        A large 17th-century private library part of the Museum Plantin-Moretus.      
+        <p>A large 17th-century library part of the Museum Plantin-Moretus.</p>      
       </figcaption>
     </figure>
   </div>
