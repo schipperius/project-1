@@ -3,7 +3,7 @@
   <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom"> 
     
     <!-- Title and Home link with space on the left for an SVG logo -->
-    <div class="d-flex align-items-center me-md-auto gap-3">
+    <div class="d-flex align-items-center me-md-auto gap-4">
       <a href="{{ '/' | relative_url }}" class="d-flex align-items-center link-body-emphasis text-decoration-none"> 
         
         <img src="{{ '/assets/images/letter-j.png' | relative_url }}" class="me-2" width="40" height="32" aria-hidden="true" alt="Letter J logo">
@@ -27,9 +27,11 @@
         type="button"
         aria-label="Toggle navigation"
       >
-        Jump In
+        <a href="{{ '/gallery/' | relative_url }}" class="nav-link {% if page.url contains '/gallery' %}active{% endif %} px-2">
+          Gallery
+        </a>
       </button>
-          <!-- Search... need to implement a real search function. -->  
+      <!-- Search... need to implement a real search function. -->  
       <div class="d-flex align-items-center gap-3">
         <form class="d-flex align-items-between" role="search">
           <input
@@ -61,5 +63,4 @@
     {% include toc.html %}
   </header> 
 </div>
-<!-- End new navbar -->
-
+<!-- End navbar -->
