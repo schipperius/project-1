@@ -1,30 +1,75 @@
 @charset "UTF-8";
 /* Import partials from _sass */
-/* Since this is a partial, no need for front matter */
-/* These are my custom theme styles: colours, fonts, spacing, ... */
-/* If needed, create _overrides.scss for navbar, footer, etc., */
-/* or separate them out... */
-/* _navbar.scss for navbar specific styles */
-/* _footer.scss for footer specific styles */
-/* and so on... */
 /* ========================= Hero Figure + Caption ========================= */
-.hero-image { border-radius: 1rem; transition: opacity 0.3s ease; /* Figure numbering */ /* ========================= Themes (Light, Dark, Auto) ========================= */ /* Light theme (default) */ /* Dark theme */ /* Dark theme refinement */ /* ========================= Drop cap for the opening paragraph ========================= */ /* ========================= Cover page custom styles ========================= */ /*  Globals */ /* Custom default button */ /* Base structure */ /* Header */ }
-.hero-image .hero-figure { margin: 0; counter-increment: figure; }
-.hero-image .hero-caption { margin-top: 0.75rem; max-width: 36rem; font-size: 0.875rem; line-height: 1.4; font-style: italic; color: var(--bs-secondary-color); text-align: left; /* Hanging indent after “Figure X.” */ padding-left: 5.5ch; text-indent: -5.5ch; }
-.hero-image .hero-caption::before { content: "Figure " counter(figure) ". "; font-weight: 500; }
-.hero-image [data-bs-theme="light"] .hero-image { opacity: 1; mix-blend-mode: normal; }
-.hero-image [data-bs-theme="dark"] .hero-image { opacity: 0.85; mix-blend-mode: screen; }
-.hero-image [data-bs-theme="dark"] .hero-caption { opacity: 0.85; }
-.hero-image .drop-cap:first-of-type::first-letter { float: left; font-size: 5em; line-height: 0.85; font-weight: bold; margin: 0.05em 0.1em 0 0; color: #333; /* Optional: color the letter */ }
-.hero-image .btn-light, .hero-image .btn-light:hover, .hero-image .btn-light:focus { color: #333; text-shadow: none; /* Prevent inheritance from `body` */ }
-.hero-image body { text-shadow: 0 0.05rem 0.1rem rgba(0, 0, 0, 0.5); box-shadow: inset 0 0 5rem rgba(0, 0, 0, 0.5); }
-.hero-image .cover-container { max-width: 42em; }
-.hero-image .nav-masthead .nav-link { color: rgba(255, 255, 255, 0.5); border-bottom: .25rem solid transparent; }
-.hero-image .nav-masthead .nav-link:hover, .hero-image .nav-masthead .nav-link:focus { border-bottom-color: rgba(255, 255, 255, 0.25); }
-.hero-image .nav-masthead .nav-link + .nav-link { margin-left: 1rem; }
-.hero-image .nav-masthead .active { color: #fff; border-bottom-color: #fff; }
+.hero-image { border-radius: 1rem; transition: opacity 0.3s ease; }
 
-/* Navbar active link highlight */
-.nav-link.active { font-weight: 600; color: #0d6efd; }
+.hero-figure { margin: 0; counter-increment: figure; }
 
-/* Theme toggle button styles */
+.hero-caption { margin-top: 0.75rem; max-width: 36rem; font-size: 0.875rem; line-height: 1.4; font-style: italic; color: var(--bs-secondary-color); text-align: left; /* Hanging indent after “Figure X.” */ padding-left: 5.5ch; text-indent: -5.5ch; }
+
+/* Figure numbering */
+.hero-caption::before { content: "Figure " counter(figure) ". "; font-weight: 500; }
+
+/* ========================= Themes (Light, Dark, Auto) ========================= */
+/* Light theme (default) */
+[data-bs-theme="light"] .hero-image { opacity: 1; mix-blend-mode: normal; }
+
+/* Dark theme */
+[data-bs-theme="dark"] .hero-image { opacity: 0.85; mix-blend-mode: screen; }
+
+/* Dark theme refinement */
+[data-bs-theme="dark"] .hero-caption { opacity: 0.85; }
+
+/* ========================= Cover page custom styles ========================= */
+.cover-container { max-width: 42em; }
+
+.nav-masthead .nav-link { color: rgba(255, 255, 255, 0.5); border-bottom: .25rem solid transparent; }
+
+.nav-masthead .nav-link:hover, .nav-masthead .nav-link:focus { border-bottom-color: rgba(255, 255, 255, 0.25); }
+
+.nav-masthead .nav-link + .nav-link { margin-left: 1rem; }
+
+.nav-masthead .active { color: #fff; border-bottom-color: #fff; }
+
+/* ========================= Navbar Layout Logic ========================= */
+.navbar-brand { flex-shrink: 0; }
+
+.navbar-icons { display: flex; align-items: center; gap: 0.75rem; margin-left: auto; }
+
+/* Prevent logo stacking */
+.navbar > .container, .navbar > .container-fluid { display: flex; align-items: center; justify-content: space-between; }
+
+/* Small screen adjustments */
+@media (max-width: 576px) { /* Hide text labels */
+  .nav-label { display: none; }
+  /* Keep icons evenly spaced */
+  .navbar-icons { gap: 0.5rem; } }
+/* ========================= Drop cap for the opening paragraph ========================= */
+.drop-cap:first-of-type::first-letter { float: left; font-size: 5em; line-height: 0.85; font-weight: bold; margin: 0.05em 0.1em 0 0; color: var(--bs-body-color); }
+
+/* ========================= _custom.scss  → Theme styles (colors, effects, typography) _navbar.scss  → Navbar layout + responsive logic _hero.scss    → Hero image + caption styles _cover.scss   → Cover page specific styles ========================= */
+/* ========================= Global Theme Styles ========================= */
+.btn-light, .btn-light:hover, .btn-light:focus { color: #333; text-shadow: none; }
+
+body { text-shadow: 0 0.05rem 0.1rem rgba(0, 0, 0, 0.5); box-shadow: inset 0 0 5rem rgba(0, 0, 0, 0.5); }
+
+/* Subtle Hover Transitions */
+.navbar .btn { transition: background-color 0.18s ease, border-color 0.18s ease, transform 0.08s ease; }
+
+/* Gentle hover lift */
+.navbar .btn:hover { transform: translateY(-1px); }
+
+/* Active press */
+.navbar .btn:active { transform: translateY(0); }
+
+.navbar-glass { backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px); background-color: rgba(var(--bs-body-bg-rgb), 0.85); }
+
+/* Slightly stronger blur on scroll (optional enhancement) */
+.navbar-scrolled { backdrop-filter: blur(12px); }
+
+.navbar-divider { border-bottom: 1px solid rgba(0, 0, 0, 0.06); }
+
+[data-bs-theme="dark"] .navbar-divider { border-bottom: 1px solid rgba(255, 255, 255, 0.06); }
+
+/* Active nav link styling */
+.nav-link.active { font-weight: 600; color: var(--bs-primary); }

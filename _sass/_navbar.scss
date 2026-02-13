@@ -1,0 +1,37 @@
+/* =========================
+   Navbar Layout Logic
+   ========================= */
+
+.navbar-brand {
+  flex-shrink: 0;
+}
+
+.navbar-icons {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-left: auto;
+}
+
+/* Prevent logo stacking */
+.navbar > .container,
+.navbar > .container-fluid {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Small screen adjustments */
+@media (max-width: 576px) {
+
+  /* Hide text labels */
+  .nav-label {
+    display: none;
+  }
+
+  /* Keep icons evenly spaced */
+  .navbar-icons {
+    gap: 0.5rem;
+  }
+
+}
