@@ -6,103 +6,137 @@
     <title>Copyright</title>
     <link rel="canonical" href="http://localhost:4000/book-of-jack/copyright/">
     <link rel="stylesheet" href="/book-of-jack/assets/css/bootstrap.min.css">
-    <link rel="stylesheet" href="/book-of-jack/assets/css/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="/book-of-jack/assets/css/main-site.css">
 <meta name="theme-color" content="">
   </head>
   <body class="d-flex flex-column min-vh-100">
     <script src="/book-of-jack/assets/js/theme-toggle.js"></script>
     <script src="/book-of-jack/assets/js/auto-close-offcanvas.js"></script>
-    <nav class="navbar sticky-top bg-body border-bottom">
-  <div class="container d-flex align-items-center justify-content-between">
+    <nav class="navbar sticky-top bg-body">
+  <div class="container border-bottom pb-2">
 
-    <!-- LEFT GROUP -->
-    <div class="d-flex align-items-center gap-2">
+    <!-- Desktop Layout -->
+    <div class="d-none d-md-flex align-items-center w-100">
 
-      <!-- Brand -->
-      <a class="navbar-brand d-flex align-items-center mb-0" href="/book-of-jack/">
-        <img
-          src="/book-of-jack/assets/img/letter-j.png"
-          width="40"
-          height="32"
-          class="me-2"
-          alt="Letter J logo">
+      <!-- LEFT COLUMN -->
+      <div class="d-flex align-items-center gap-3 flex-shrink-0">
 
-        <!-- Disappears before Start Here -->
-        <span class="fs-5 d-none d-lg-inline">the Book of Jack</span>
-      </a>
+        <!-- Logo always visible -->
+        <a class="navbar-brand d-flex align-items-center mb-0"
+           href="/book-of-jack/">
+          <img
+            src="/book-of-jack/assets/img/letter-j.png"
+            width="40"
+            height="32"
+            alt="Letter J logo">
+          <span class="fs-5 ms-2 d-none d-lg-inline">the Book of Jack</span>
+        </a>
 
-      <!-- Start Here (Offcanvas trigger) -->
-      <button
-        class="btn btn-outline-secondary btn-sm px-2"
-        type="button"
-        data-bs-toggle="offcanvas"
-        data-bs-target="#offcanvasNavbarDark"
-        aria-controls="offcanvasNavbarDark">
-
-        <span class="navbar-toggler-icon"></span>
-
-        <!-- Hide text earlier than brand -->
-        <span class="ms-2 d-none d-md-inline">Start Here</span>
-      </button>
-
-      <!-- Gallery -->
-      <a href="/book-of-jack/gallery/"
-         class="btn btn-outline-secondary btn-sm px-2">
-
-        <!-- Text on larger screens -->
-        <span class="d-none d-md-inline">Gallery</span>
-
-        <!-- Icon on small screens -->
-        <span class="d-md-none">🖼️</span>
-      </a>
-
-    </div>
-
-
-    <!-- RIGHT GROUP -->
-    <div class="d-flex align-items-center gap-2">
-
-      <!-- Search -->
-      <form class="d-flex align-items-center" role="search">
-
-        <!-- Input disappears on small -->
-        <input
-          class="form-control form-control-sm me-2 d-none d-md-block"
-          type="search"
-          placeholder="Search"
-          aria-label="Search">
-
-        <!-- Icon always visible -->
-        <button class="btn btn-outline-secondary btn-sm px-2" type="submit">
-          🔍
+        <!-- Start Here -->
+        <button
+          class="btn btn-outline-secondary btn-sm d-none d-md-inline-flex"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasNavbarDark">
+          <span class="navbar-toggler-icon"></span>
+          <span class="ms-2">Start Here</span>
         </button>
 
-      </form>
+        <!-- Gallery (desktop text) -->
+        <a href="/book-of-jack/gallery/"
+           class="btn btn-outline-secondary btn-sm d-none d-md-inline-flex">
+          Gallery
+        </a>
 
-      <!-- Theme -->
-      <div class="dropdown">
-        <button class="btn btn-outline-secondary btn-sm px-2 dropdown-toggle"
-                data-bs-toggle="dropdown"
-                aria-expanded="false">
+      </div>
 
-          <!-- Text large -->
-          <span class="d-none d-md-inline">Theme</span>
 
-          <!-- Icon small (placeholder for now) -->
-          <span class="d-md-none">🎨</span>
+      <!-- CENTER COLUMN (Search) -->
+      <div class="flex-grow-1 d-none d-md-flex justify-content-center">
 
-        </button>
+        <form class="d-flex" role="search">
+          <input
+            class="form-control form-control-sm me-2"
+            type="search"
+            placeholder="Search">
+          <button class="btn btn-outline-secondary btn-sm">
+            <i class="bi bi-search"></i>
+          </button>
+        </form>
 
-        <ul class="dropdown-menu dropdown-menu-end">
-          <li><button class="dropdown-item" data-bs-theme-value="light">☀ Light</button></li>
-          <li><button class="dropdown-item" data-bs-theme-value="dark">🌙 Dark</button></li>
-          <li><button class="dropdown-item" data-bs-theme-value="auto">⚙ Auto</button></li>
-        </ul>
+      </div>
+
+
+      <!-- RIGHT COLUMN -->
+      <div class="d-flex align-items-center gap-3 flex-shrink-0">
+
+        <!-- Theme -->
+        <div class="dropdown d-none d-md-block">
+          <button class="btn btn-outline-secondary btn-sm dropdown-toggle"
+                  data-bs-toggle="dropdown">
+            Theme
+          </button>
+          <ul class="dropdown-menu dropdown-menu-end">
+            <li><button class="dropdown-item" data-bs-theme-value="light">☀ Light</button></li>
+            <li><button class="dropdown-item" data-bs-theme-value="dark">🌙 Dark</button></li>
+            <li><button class="dropdown-item" data-bs-theme-value="auto">⚙ Auto</button></li>
+          </ul>
+        </div>
+
       </div>
 
     </div>
 
+
+    <!-- MOBILE LAYOUT -->
+    <div class="d-flex d-md-none align-items-center w-100">
+
+      <!-- Logo -->
+      <a class="navbar-brand d-flex align-items-center mb-0 flex-shrink-0"
+        href="/book-of-jack/">
+        <img
+          src="/book-of-jack/assets/img/letter-j.png"
+          width="40"
+          height="32"
+          alt="Letter J logo">
+      </a>
+
+      <!-- Icon Row -->
+      <div class="d-flex flex-grow-1 justify-content-evenly">
+
+        <button class="btn btn-outline-secondary btn-sm"
+                data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasNavbarDark">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <a href="/book-of-jack/gallery/"
+          class="btn btn-outline-secondary btn-sm">
+          <i class="bi bi-images"></i>
+        </a>
+
+        <button class="btn btn-outline-secondary btn-sm">
+          <i class="bi bi-search"></i>
+        </button>
+
+        <div class="dropdown">
+          <button class="btn btn-outline-secondary btn-sm"
+                  data-bs-toggle="dropdown">
+            <i class="bi bi-palette"></i>
+          </button>
+          <ul class="dropdown-menu dropdown-menu-end">
+            <li><button class="dropdown-item" data-bs-theme-value="light">☀ Light</button></li>
+            <li><button class="dropdown-item" data-bs-theme-value="dark">🌙 Dark</button></li>
+            <li><button class="dropdown-item" data-bs-theme-value="auto">⚙ Auto</button></li>
+          </ul>
+        </div>
+
+      </div>
+
+    </div>
+
+    
   </div>
 </nav>
 
@@ -208,8 +242,8 @@
 
       </div>
     </main>
-      <footer class="footer mt-auto border-top py-3">
-    <div class="container d-flex justify-content-end align-items-center gap-2">
+      <footer class="footer container mt-auto border-top pb-2 py-3">
+    <div class="d-flex justify-content-end align-items-center pb-2 gap-2">
       <a href="/book-of-jack/copyright/"
          class="nav-link active px-2">
         © 2026
