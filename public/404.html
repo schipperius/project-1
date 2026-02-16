@@ -12,7 +12,8 @@
   </head>
   <body class="d-flex flex-column min-vh-100">
     <script src="/book-of-jack/assets/js/theme-toggle.js"></script>
-    <script src="/book-of-jack/assets/js/auto-close-offcanvas.js"></script>
+    <script src="/book-of-jack/assets/js/auto-close-offcanvas.js"></script>    
+    <script src="/book-of-jack/assets/js/sidebar.js"></script>
     <nav class="navbar sticky-top bg-body py-2">
   <div class="container border-bottom pb-2">
 
@@ -144,13 +145,14 @@
       Table of Contents
       ========================= -->
 
-  <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbarDark" aria-labelledby="offcanvasNavbarDarkLabel">
+  <!-- Offcanvas Panel -->
+<div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbarDark" aria-labelledby="offcanvasNavbarDarkLabel">
   <div class="offcanvas-header">
     <h4 class="offcanvas-title" id="offcanvasNavbarDarkLabel">Table of Contents</h4>
     <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
   </div>
+  
   <div class="offcanvas-body">
-    
     <h5>Front Matter</h5>
     <ul class="navbar-nav">
       <li class="nav-item">
@@ -193,6 +195,62 @@
   
 </div>
 
+<!-- Filter/Sort Options: For data-heavy pages like product listings or search results, 
+ an offcanvas can hold complex filtering and sorting options that are hidden until needed, 
+ improving the main layout's clarity. -->
+
+
+
+
+
+
+    <!--
+
+<div class="container-xxl bd-gutter mt-3 my-md-4 bd-layout"> 
+  <aside class="bd-sidebar"> 
+    <div class="offcanvas-lg offcanvas-start" tabindex="-1" id="bdSidebar" aria-labelledby="bdSidebarOffcanvasLabel"> 
+      <div class="offcanvas-header border-bottom"> 
+        <h5 class="offcanvas-title" id="bdSidebarOffcanvasLabel">Browse docs</h5> 
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close" data-bs-target="#bdSidebar"></button> 
+      </div> 
+      <div class="offcanvas-body"> 
+        <nav class="bd-links w-100" id="bd-docs-nav" aria-label="Docs navigation"> 
+          <ul class="bd-links-nav list-unstyled mb-0 pb-3 pb-md-2 pe-lg-2"> 
+            <li class="bd-links-group py-2"> 
+              <strong class="bd-links-heading d-flex w-100 align-items-center fw-semibold"> 
+                <svg class="bi me-2" style="color: var(--bs-indigo);" aria-hidden="true"> 
+                  <use xlink:href="#book-half"></use> 
+                </svg> Getting started 
+              </strong> 
+              <ul class="list-unstyled fw-normal pb-2 small"> 
+                <li> 
+                  <a href="/" class="bd-links-link d-inline-block rounded active" aria-current="page"> Introduction </a> 
+                </li>
+                <li> 
+                  <a href="/" class="bd-links-link d-inline-block rounded"> Download </a> 
+                </li>
+              </ul> 
+            </li>
+            <li class="bd-links-group py-2"> 
+              <strong class="bd-links-heading d-flex w-100 align-items-center fw-semibold"> 
+                <svg class="bi me-2" style="color: var(--bs-pink);" aria-hidden="true"> 
+                  <use xlink:href="#palette2"></use> 
+                </svg> Customize </strong> 
+          <ul class="list-unstyled fw-normal pb-2 small"> 
+            <li> 
+              <a href="/" class="bd-links-link d-inline-block rounded"> Overview </a> 
+            </li>
+            <li> 
+              <a href="/" class="bd-links-link d-inline-block rounded"> Sass </a> 
+            </li> 
+          </ul> 
+        </nav> 
+      </div> 
+    </div> 
+  </aside>
+</div>
+
+-->
 
 
     <main class="flex-grow-1 px-3">
@@ -232,17 +290,18 @@
               
   
     
+
   
     Table of Contents
     
   
   
-    
+  
     Front Matter
     
       
         
-         ...
+          ...
             </p>
             <a href="/book-of-jack/copyright/" class="btn btn-outline-primary btn-sm">Go</a>
           </div>
