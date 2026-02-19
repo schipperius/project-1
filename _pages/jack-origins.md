@@ -39,7 +39,7 @@ permalink: /jack-origins/
       <div class="col-12 col-lg-6">
         <figure class="figure">
           <!-- Placeholder for map image -->
-          <img src="/assets/images/jack-name-map.png" class="figure-img img-fluid rounded" alt="Map showing the journey of the name Jack">
+          <img src="#" class="figure-img img-fluid rounded" alt="Map showing the journey of the name Jack">
           <figcaption class="figure-caption">
             Map showing the journey of the name <strong>Jack</strong> from Canaan (Hebrew origin) through Greece, Rome, France, and England.
           </figcaption>
