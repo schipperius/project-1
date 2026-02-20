@@ -4,19 +4,17 @@ title: Home
 permalink: /
 ---
 
-<div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+<div class="cover-container d-flex w-100 h-100 mx-auto flex-column">
   <div class="px-3">
     <figure class="figure">
       <img
-        src="{{ '/assets/img/library.jpg' | relative_url }}"
-        class="img-fluid img-thumbnail hero-image"
+        src="{{ '/assets/img/book-bindings.jpg' | relative_url }}"
+        class="img-fluid img-thumbnail"
         alt="A large 17th-century private library now part of the Museum Plantin-Moretus."
-        width="700"
-        height="500"
         loading="lazy"
       />
       <figcaption class="figure-caption hero-caption">
-        <p>A large 17th-century library part of the Museum Plantin-Moretus.</p>      
+        <p>Book bindings</p>      
       </figcaption>
     </figure>
   </div>

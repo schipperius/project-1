@@ -1,7 +1,8 @@
 ---
 layout: default
-title: Cracker Jack
+title: "Cracker Jack"
 permalink: /cracker-jack/
+node: cracker-jack
 
 categories: [Food and Drink, Anthologies]
 tags:
@@ -12,41 +13,16 @@ tags:
   - narrative
 ---
 
-<!-- HERO / ENTRY HEADER -->
-<section class="py-4" id="entry-header">
-  <div class="container col-xxl-8 px-4">
-    <div class="row flex-lg-row-reverse align-items-center g-5">
-      <div class="col-10 col-sm-8 col-lg-6">
-        <figure class="figure">
-          <img
-            src="{{ '/assets/img/cracker-jack.jpg' | relative_url }}"
-            class="img-fluid img-thumbnail hero-image"
-            alt="Cracker Jack packaging from the late 19th century"
-            width="700"
-            height="500"
-            loading="lazy"
-          />
-          <figcaption class="figure-caption hero-caption">
-            Candied popcorn and peanuts rebranded as Cracker Jack in 1896.
-          </figcaption>
-        </figure>
-      </div>
-      <div class="col-lg-6">
-        <h1 class="display-5 fw-bold lh-1 mb-3">Cracker Jack</h1>
-        <p class="lead">
-          A classic sweet snack of caramel-flavoured popcorn mixed with roasted peanuts, known for its crunchy texture and nostalgic association with fairs and baseball games.
-        </p>
-        <nav class="d-flex flex-wrap gap-3 mt-4" aria-label="Related links">
-          <a href="#catagories/food-and-drink" class="btn btn-outline-secondary btn-lg">Food and Drink</a>
-          <a href="#tags/etymology" class="btn btn-outline-secondary btn-lg">Etymology</a>
-          <a href="#tags/" class="btn btn-outline-secondary btn-lg">Link</a>
-          <a href="#categories/anthologies" class="btn btn-outline-secondary btn-lg">Short Fiction</a>
-        </nav>
-      </div>
-    </div>
-  </div>
-</section>
+{% assign item = site.data.gallery | where: "id", page.node | first %}
 
+{% include hero.html
+   image=item.image
+   alt=item.alt
+   caption=item.caption
+   title=item.title
+   description=item.description
+   links=item.links
+%}
 
 <!-- OVERVIEW -->
 <section class="py-5" id="overview">

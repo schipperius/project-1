@@ -1,0 +1,22 @@
+- id: cracker-jack
+  title: "Cracker Jack"
+  description: "A classic sweet snack of caramel-flavoured popcorn mixed with roasted peanuts, known for its nostalgic association with fairs and baseball."
+  image: "/assets/img/cracker-jack.jpg"
+  alt: "Cracker Jack packaging from the late 19th century"
+  caption: "Candied popcorn and peanuts rebranded as Cracker Jack in 1896."
+  links:
+    - label: "History"
+      url: "#history"
+    - label: "Cultural Impact"
+      url: "#cultural-impact"
+- id: wadi-el-hol
+  title: "Wadi el-Hol"
+  description: "Carved into the soft limestone cliffs by Semites some 4000 years ago, it is here in Egypt's western desert that we find the first signs of an alphabetic writing system."
+  image: "/assets/img/wadi-el-hol.png"
+  alt: "Wadi el-Hol"
+  caption: "The Wadi el-Hol inscriptions are among the earliest known alphabetic texts."
+  links:
+    - label: "History"
+      url: "#history"
+    - label: "Cultural Impact"
+      url: "#cultural-impact"
