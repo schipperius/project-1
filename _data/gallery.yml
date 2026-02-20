@@ -21,3 +21,14 @@
       url: "#history"
     - label: "Cultural Impact"
       url: "#cultural-impact"
+
+- id: the-book-of-jack
+  title: "the Book of Jack"
+  description: "A collection of stories and anecdotes about the character Jack, often depicted as a clever and resourceful figure in folklore and literature."
+  image: "/assets/img/book-bindings.jpg"
+  alt: "the Book of Jack cover"
+  caption: "The Book of Jack compiles various tales of the iconic character across cultures."
+  links: 
+    - label: "Menu"
+      url: "#"
+

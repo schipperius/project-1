@@ -1,19 +1,7 @@
 ---
 layout: default
-title: "Wadi el-Hol"
-permalink: /wadi-el-hol/
-id: wadi-el-hol
-
-categories: [Origins, Anthologies]
-tags:
-  - etymology 
-  - origin
-  - location
-  - time
-  - narrative
 ---
 
-<!-- start hero section -->
 {% assign item = site.data.gallery | where: "id", page.id | first %}
 
 {% include hero.html
@@ -24,5 +12,3 @@ tags:
    description=item.description
    links=item.links
 %}
-<!-- end hero section -->
-
