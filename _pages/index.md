@@ -1,7 +1,7 @@
 ---
 layout: home
-title: the Book of Jack
-permalink: /Home/
+supra: the
+title: Book of Jack
 node: home
 
 categories: [Origins, Anthologies]
@@ -13,5 +13,5 @@ tags:
   - narrative
 ---
 
-<!-- Hero section pulled in with cover layout -->
+<!-- home inlude pulled in with home layout -->
 

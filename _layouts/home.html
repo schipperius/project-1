@@ -4,8 +4,8 @@ layout: default
 
 {% comment %}
   Dedicated layout for Home page
-  - Pulls hero automatically from site.data.gallery
-  - Renders page content below hero
+  - Pulls home page data automatically from site.data.gallery
+  - Renders page content below home
 {% endcomment %}
 
 {% assign item = site.data.gallery | where: "id", page.node | first %}
@@ -20,7 +20,3 @@ layout: default
      links=item.links
   %}
 {% endif %}
-
-<main class="container my-4 flex-fill">
-  {{ content }}
-</main>

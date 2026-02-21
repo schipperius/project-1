@@ -19,7 +19,7 @@ layout: default
       <div class="col">
         <div class="card h-100">
 
-          <a href="{{ '/' | append: item.id | append: '/' | relative_url }}"
+          <a href="{{ item.url | relative_url }}"
              class="text-decoration-none text-dark">
 
             <img src="{{ item.image | relative_url }}"
