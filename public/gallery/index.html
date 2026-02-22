@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="/book-of-jack/assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="/book-of-jack/assets/css/main-site.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
     <meta name="theme-color" content="">
   </head>
   <body class="d-flex flex-column min-vh-100">
@@ -48,6 +49,11 @@
         <a href="/book-of-jack/gallery/"
            class="btn btn-outline-secondary btn-sm d-none d-md-inline-flex">
           Gallery
+        </a>
+        <!-- Map (desktop text) -->
+        <a href="/book-of-jack/map/"
+           class="btn btn-outline-secondary btn-sm d-none d-md-inline-flex">
+          Map
         </a>
 
       </div>
@@ -251,6 +257,28 @@
       <div class="col">
         <div class="card h-100">
 
+          <a href="/book-of-jack/"
+             class="text-decoration-none text-dark">
+
+            <img src="/book-of-jack/assets/img/book-bindings.jpg"
+                 class="card-img-top"
+                 alt="the Book of Jack cover">
+
+          </a>
+
+          <div class="card-body">
+            <h5 class="card-title">Book of Jack</h5>
+            <p class="card-text">A collection of stories and anecdotes about the character Jack, often depicted as a clever and resourceful figure in folklore and literature.</p>
+          </div>
+
+        </div>
+      </div>
+
+      
+
+      <div class="col">
+        <div class="card h-100">
+
           <a href="/book-of-jack/cracker-jack/"
              class="text-decoration-none text-dark">
 
@@ -292,28 +320,6 @@
 
       
 
-      <div class="col">
-        <div class="card h-100">
-
-          <a href="/book-of-jack/"
-             class="text-decoration-none text-dark">
-
-            <img src="/book-of-jack/assets/img/book-bindings.jpg"
-                 class="card-img-top"
-                 alt="the Book of Jack cover">
-
-          </a>
-
-          <div class="card-body">
-            <h5 class="card-title">Book of Jack</h5>
-            <p class="card-text">A collection of stories and anecdotes about the character Jack, often depicted as a clever and resourceful figure in folklore and literature.</p>
-          </div>
-
-        </div>
-      </div>
-
-      
-
     </div>
 
   </div>
@@ -331,6 +337,7 @@
   </footer>
 
     <script src="/book-of-jack/assets/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
   </body>
 </html>
 
