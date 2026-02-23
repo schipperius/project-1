@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Geographic Archive
+title: Book of Jack Maps
 permalink: /map/
 ---
 
