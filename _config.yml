@@ -11,19 +11,24 @@
 # If you need help with YAML syntax, here are some quick references for you:
 # https://learn-the-web.algonquindesign.ca/topics/markdown-yaml-cheat-sheet/#yaml
 # https://learnxinyminutes.com/docs/yaml/
-#
+# For more configuration options, see the Jekyll documentation:
+# https://jekyllrb.com/docs/configuration/
+
+
+# -----------------------------------------------------------------------------
 # Site settings
 # These are used to personalize your new site. If you look in the HTML files,
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
+# -----------------------------------------------------------------------------
 
 github_username: schipperius
-url: "https://schipperius.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://schipperius.github.io" # the base hostname & protocol for your site
 baseurl: "/book-of-jack" # the subpath of your site, if you are using GitHub pages, this is usually the repository name
 destination: ./site # the destination directory for the generated site, default: ./_site
 
-suptitle: the
+sup: the
 title: Book of Jack
 subtitle: An exploration of the word Jack; its origins and usage.
 description: >- # this means to ignore newlines until "baseurl:" 
@@ -34,20 +39,37 @@ author: Mark Schipper
 # simple_search: http://google.com/search
 
 # Build settings
-# theme: minima
 
 plugins:
   - jekyll-feed
 
+# -----------------------------------------------------------------------------
+# Collections
+# -----------------------------------------------------------------------------
 collections:
   pages:
     output: true
+  articles:
+    output: true
+    permalink: /:name/
+
+# -----------------------------------------------------------------------------
+# SASS settings
+# -----------------------------------------------------------------------------
 
 sass:
   sass_dir: _sass
   cache_location: ./.sass-cache
 
+# -----------------------------------------------------------------------------
+# Jekyll settings
+# -----------------------------------------------------------------------------
+
+# The markdown processor to use. Jekyll uses kramdown by default, but you can specify 
+# another one if you like. For more information, see:
+# https://jekyllrb.com/docs/configuration/options/#markdown-processor
 markdown: kramdown
+
 
 # Exclude from processing.
 # The following items will not be processed, by default.

@@ -1,6 +1,6 @@
 ---
 layout: home
-supra: the
+sup: the
 title: Book of Jack
 node: home
 ---
