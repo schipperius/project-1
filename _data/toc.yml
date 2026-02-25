@@ -1,21 +1,27 @@
-- section: "I — INTRODUCTION"
+- section: "I — Foundations"
   items:
+    - title: Origins
+      url: /jack-origins/
     - title: About
       url: /about/
+    - title: Copyright
+      url: /copyright/
 
-- section: "II — The Letter J"
+- section: "II — The Letter"
   items:
     - title: Wadi El-Hol
       url: /wadi-el-hol/
 
 - section: "III — FOOD & WORK"
-  subsection:
+  subsections:
     - title: Food
       items:
-      - title: Cracker Jack
-        url: /cracker-jack/
-      - title: Lumber Jack
-        url: /lumber-jack/
+        - title: Cracker Jack
+          url: /cracker-jack/
+    - title: Work
+      items:
+        - title: Lumber Jack
+          url: /lumber-jack/
 
 - section: "IV — Myth & Media"
   items:
