@@ -4,14 +4,14 @@ layout: default
 
 {% comment %}
   Dedicated layout for Jack entries:
-  - Pulls hero automatically from site.data.gallery
-  - Renders page content below hero
+  - Pulls lead section automatically from site.data.gallery
+  - Renders page content below lead section
 {% endcomment %}
 
 {% assign item = site.data.gallery | where: "id", page.node | first %}
 
 {% if item %}
-  {% include hero.html
+  {% include lead-section.html
      image=item.image
      alt=item.alt
      caption=item.caption
@@ -21,7 +21,7 @@ layout: default
   %}
 {% endif %}
 
-<!-- Brings in content below the hero section -->
+<!-- Brings in content below the lead section -->
 <main class="container my-4 flex-fill">
   {{ content }}
 </main>

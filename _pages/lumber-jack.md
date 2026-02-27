@@ -1,5 +1,5 @@
 ---
-layout: hero
+layout: lead-section
 title: "Lumberjack"
 permalink: /lumber-jack/
 node: lumber-jack

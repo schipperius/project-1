@@ -1,5 +1,5 @@
 ---
-layout: hero
+layout: lead-section
 title: "Cracker Jack"
 permalink: /cracker-jack/
 node: cracker-jack

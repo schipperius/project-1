@@ -1,5 +1,5 @@
 ---
-layout: hero
+layout: lead-section
 title: "Wadi el-Hol"
 permalink: /wadi-el-hol/
 node: wadi-el-hol
