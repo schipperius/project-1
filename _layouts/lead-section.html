@@ -5,10 +5,10 @@ layout: default
 {% comment %}
   Dedicated layout for Jack entries:
   - Pulls lead section automatically from site.data.gallery
-  - Renders page content below lead section
+  - Renders page content from lead-section
 {% endcomment %}
 
-{% assign item = site.data.gallery | where: "id", page.node | first %}
+{% assign item = site.data.articles | where: "id", page.node | first %}
 
 {% if item %}
   {% include lead-section.html

@@ -12,7 +12,12 @@
     - title: Wadi El-Hol
       url: /wadi-el-hol/
 
-- section: "III — FOOD & WORK"
+- section: "III — the Labourer"
+  items:
+    - title: Steeplejack
+      url: /steeplejack/
+
+- section: "IV — FOOD & WORK"
   subsections:
     - title: Food
       items:
@@ -23,7 +28,7 @@
         - title: Lumber Jack
           url: /lumber-jack/
 
-- section: "IV — Myth & Media"
+- section: "V — Myth & Media"
   items:
     - title: Jack in Pop Culture
       url: /jack-in-pop-culture/

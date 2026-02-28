@@ -26,11 +26,11 @@
 github_username: schipperius
 url: "https://schipperius.github.io" # the base hostname & protocol for your site
 baseurl: "/book-of-jack" # the subpath of your site, if you are using GitHub pages, this is usually the repository name
-destination: ./site # the destination directory for the generated site, default: ./_site
+destination: ./_site # the destination directory for the generated site, default: ./_site
 
 sup: the
 title: Book of Jack
-subtitle: An exploration of the word Jack; its origins and usage.
+sub: An exploration of the word Jack; its origins and usage.
 description: >- # this means to ignore newlines until "baseurl:" 
   An exploration of the word Jack; its origins and usage.
 author: Mark Schipper

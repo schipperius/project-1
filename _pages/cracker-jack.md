@@ -12,7 +12,7 @@ tags:
   - narrative
 ---
 
-<!-- Hero section pulled in with hero layout -->
+<!-- _layouts/lead-section pulls _includes/lead-section -->
 
 <!-- OVERVIEW -->
 <section class="py-5" id="overview">
