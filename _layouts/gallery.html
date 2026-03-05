@@ -19,14 +19,14 @@ layout: default
           <div class="card h-100">
             <a href="{{ story.url | relative_url }}" class="text-decoration-none text-dark">
               {% if story.image %}
-                <img src="{{ story.image | relative_url }}" 
+                <img src="{{ story.image.path | relative_url }}" 
                     class="card-img-top" 
-                    alt="{{ story.alt | default: story.title }}">
+                    alt="{{ story.image.alt | default: story.name }}">
               {% endif %}
             </a>
             <div class="card-body">
               <h5 class="card-title">{{ story.title }}</h5>
-              <p class="card-text">{{ story.description }}</p>
+              <p class="card-text">{{ story.text.description }}</p>
             </div>
           </div>
         </div>

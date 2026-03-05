@@ -2,6 +2,18 @@
 layout: default
 ---
 
-<div class="container py-5">
+{% comment %}
+  Page layout - Uses front matter from the current _pages document.
+{% endcomment %}
+
+{% include lead.html
+image=page.image.path
+alt=page.image.alt
+caption=page.image.caption
+title=page.title
+description=page.text.description
+%}
+
+<main class="container my-4 flex-fill">
   {{ content }}
-</div>
+</main>

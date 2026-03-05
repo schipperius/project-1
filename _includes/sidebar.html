@@ -4,14 +4,10 @@
 
     <!-- Sidebar header -->
     <div class="mb-4">
-      <div class="text-uppercase small text-body-secondary">The Book of</div>
-      <h4 class="mb-0">Jack</h4>
+      <div class="small text-body-secondary">Table of Contents</div>
     </div>
 
     <!-- Sidebar body -->
-
-    <!-- 1. Introduction -->
-    <h6 class="mt-4 mb-2 text-uppercase small text-body-secondary">Introduction</h6>
     <ul class="nav flex-column mb-3">
       <li class="nav-item">
         <a href="{{ '/wadi-el-hol/' | relative_url }}"
@@ -20,9 +16,6 @@
         </a>
       </li>
     </ul>
-
-    <!-- 2. The Labourer -->
-    <h6 class="mt-4 mb-2 text-uppercase small text-body-secondary">The Labourer</h6>
     <ul class="nav flex-column mb-3">
       <li class="nav-item">
         <a href="{{ '/lumber-jack/' | relative_url }}"
@@ -37,9 +30,6 @@
         </a>
       </li>
     </ul>
-
-    <!-- 3. Food and Drink -->
-    <h6 class="mt-4 mb-2 text-uppercase small text-body-secondary">Food and Drink</h6>
     <ul class="nav flex-column mb-3">
       <li class="nav-item">
         <a href="{{ '/cracker-jack/' | relative_url }}"
@@ -48,14 +38,11 @@
         </a>
       </li>
     </ul>
-
-    <!-- 4. Last section (keep as before) -->
-    <h6 class="mt-4 mb-2 text-uppercase small text-body-secondary">Other</h6>
     <ul class="nav flex-column mb-3">
       <li class="nav-item">
-        <a href="{{ '/other-link/' | relative_url }}"
-           class="nav-link btn-link {% if page.url contains 'other-link' %}active{% endif %}">
-          Other
+        <a href="{{ '/colophon/' | relative_url }}"
+           class="nav-link btn-link {% if page.url contains 'colophon' %}active{% endif %}">
+          Colophon
         </a>
       </li>
     </ul>

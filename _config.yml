@@ -31,14 +31,14 @@ destination: ./_site # the destination directory for the generated site, default
 sup: the
 title: Book of Jack
 sub: An exploration of the word Jack; its origins and usage.
-description: >- # this means to ignore newlines until "baseurl:" 
+description: > # this means to ignore newlines until "baseurl:" 
   An exploration of the word Jack; its origins and usage.
 author: Mark Schipper
-# email: 
+email: jackstonecreek@gmail.com
 
 # simple_search: http://google.com/search
 
-# Build settings
+theme: minima
 
 plugins:
   - jekyll-feed
@@ -47,11 +47,19 @@ plugins:
 # Collections
 # -----------------------------------------------------------------------------
 collections:
-  pages:
-    output: true
   stories:
     output: true
     permalink: /:name/
+  docs:
+    output: true
+    permalink: /docs/:name/
+
+# ===============================
+# Includes / Extra Folders
+# ===============================
+# Only needed for folders that are NOT collections
+include:
+  - _pages
 
 # -----------------------------------------------------------------------------
 # SASS settings
@@ -70,15 +78,25 @@ sass:
 # https://jekyllrb.com/docs/configuration/options/#markdown-processor
 markdown: kramdown
 
+# -----------------------------------------------------------------------------
+# Exclude settings
+# -----------------------------------------------------------------------------
+# Excludes - the following items will be excluded from processing, by default.
+exclude:
+  - _docs/
+  - README.md
+  - LICENSE
+  - .github/
+  - .git/
+  - .vscode/
+  - .DS_Store
+  - .editorconfig
+  - .gitattributes
+  - .gitignore
+  - .jekyll-cache/
+  - .sass-cache/
+  - node_modules/
 
-# Exclude from processing.
-# The following items will not be processed, by default.
-# Any item listed under the `exclude:` key here will be automatically added to
-# the internal "default list".
-#
-# Excluded items can be processed by explicitly listing the directories or
-# their entries' file path in the `include:` list.
-#
 # exclude:
 #   - .sass-cache/
 #   - .jekyll-cache/

@@ -2,7 +2,6 @@
 layout: default
 title: About
 permalink: /
-
 ---
 
 <!-- Home Page Section -->
