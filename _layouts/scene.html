@@ -48,6 +48,7 @@ layout: default
     CURATOR'S DRAWER TRIGGER:
     Checks the linked Markdown plate for references.
     {% endcomment %}
+
     {% if plate.references %}
     <div class="mt-3">
       <button class="btn btn-outline-secondary btn-sm rounded-pill px-3" type="button" data-bs-toggle="offcanvas"
@@ -183,6 +184,7 @@ layout: default
 {% comment %}
 THE CURATOR'S DRAWER (OFFCANVAS)
 {% endcomment %}
+
 {% if plate.references and plate.references.size > 0 %}
 <div class="offcanvas offcanvas-end" tabindex="-1" id="sourceDrawer" aria-labelledby="sourceDrawerLabel"
   style="background-color: #fcfaf7;">

@@ -234,6 +234,7 @@ layout: default
 {% comment %}
 1. Index the new data files by image_id at the top
 {% endcomment %}
+
 {% assign man_map = site.data.manifest | group_by: "image_id" %}
 {% assign loc_map = site.data.location | group_by: "image_id" %}
 {% assign attr_map = site.data.attribution | group_by: "image_id" %}
@@ -241,11 +242,13 @@ layout: default
 {% comment %}
 2. Force the current page's image_id to a string to ensure it matches the CSV indexing
 {% endcomment %}
+
 {% assign target_id = page.image_id | append: "" | strip %}
 
 {% comment %}
 3. Perform the lookups using the new variable names
 {% endcomment %}
+
 {% assign man = man_map | where: "name", target_id | map: "items" | first | first %}
 {% assign loc = loc_map | where: "name", target_id | map: "items" | first | first %}
 {% assign attr = attr_map | where: "name", target_id | map: "items" | first | first %}
@@ -256,6 +259,7 @@ layout: default
     {% comment %}
     SCENE LINKING LOGIC: Find the actual scene file that matches this plate
     {% endcomment %}
+    
     {% assign linked_scene = site.scenes | where: "image_id", target_id | first %}
     
     <div class="col-lg-8">
@@ -429,10 +433,6 @@ layout: default
     
   </div>
 </article>
-
-<!-- Move to _include/head when design is stable -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/luminous-lightbox/2.3.2/luminous-basic.min.css">
-<script src="https://cdnjs.cloudflare.com/ajax/libs/luminous-lightbox/2.3.2/Luminous.min.js"></script>
 
 <script>
   // This function waits until the library AND the page are fully ready

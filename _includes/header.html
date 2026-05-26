@@ -3,7 +3,7 @@
     CHANGE 1: Added "flex-wrap" to let elements drop to a second row on mobile.
     "gap-2 gap-md-0" adds vertical spacing between rows only when wrapped.
   -->
-  <div class="d-flex align-items-center justify-content-between w-100 flex-wrap gap-2 gap-md-0">
+  <div class="d-flex align-items-center justify-content-between w-100 flex-wrap flex-md-nowrap gap-2 gap-md-0">
 
     {% if page.url == '/' %}
     {% assign brand_active_class = "btn-secondary" %}
@@ -30,7 +30,7 @@
       - "justify-content-center" centers your menu icons neatly on smaller screens.
     -->
     <nav
-      class="d-flex align-items-center justify-content-center justify-content-md-start pt-2 gap-4 gap-md-3 order-3 order-md-2 w-100 w-md-auto">
+      class="d-flex align-items-center justify-content-center pt-2 gap-4 gap-md-3 order-3 order-md-2 w-100 w-md-auto">
       {% for link in site.data.navigation.main %}
 
       {% if page.url == link.url %}

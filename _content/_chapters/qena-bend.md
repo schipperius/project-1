@@ -53,7 +53,6 @@ One treacherous area was the northern part of the Qena Bend, a sharp bend in the
 
 {% include chapter-image.html id="s01e02-giving-thanks-offerings" side="start" %}
 
-
 Across this plateau, a network of overland caravan routes criss-crossed Egypt's Western Desert. 
 
 The Caravan Tracks
